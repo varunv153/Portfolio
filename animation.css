@@ -1,0 +1,42 @@
+/*animation start */ 
+
+.progress-bar
+{
+    width: 0;
+    animation-duration: .7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    
+}
+#progressbar1
+{
+    animation-name: html1;
+}
+#progressbar2
+{
+    animation-name: html2;
+}
+#progressbar3
+{
+    animation-name: html3;
+}
+@keyframes html1
+{
+    to {
+        width: 80%;
+    }
+}
+@keyframes html2
+{
+    to {
+        width: 75%;
+    }
+}
+@keyframes html3
+{
+    to {
+        width: 70%;
+    }
+}
+
+ /*animation end */
