@@ -7,51 +7,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./scripts/scroll.css">
+    <link rel="stylesheet" href="./animation.css">
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/f4db761e29.js" crossorigin="anonymous"></script>
+
+    <title>Varun Resume From Scratch</title>
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav id="navbar" class="sticky navbar navbar-toggleable-sm bg-info navbar-inverse">
-        <div class="container-fluid">
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="mainNav">
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link active" href="#">Home</a>
-                    <a class="nav-item nav-link" href="#">Work</a>
-                    <a class="nav-item nav-link" href="#">Service</a>
-                    <a class="nav-item nav-link" href="#">Blog</a>
-                    <a class="nav-item nav-link" href="#">Contact</a>
+    <!-- navbar, jumbotron, contact -->
+    <div class="wrapper" id="navbar-with-jumbotron">
+
+        <!-- navbar -->
+
+        <nav id="navbar" class="sticky navbar navbar-toggleable-sm navbar-inverse" ><div class="container-fluid">
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link active" href="#">Home</a>
+                        <a class="nav-item nav-link active" href="#expertise">Expertise</a>
+                        <a class="nav-item nav-link active" href="#experience">Experience</a>
+                        <a class="nav-item nav-link active" href="#about-me">About Me</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+        <!-- margin after navbar -->
+        <div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
-    </nav>
 
-    <div class="wrapper bg-info">
-
-        <br>
-        <br>
-        <br>
-
+        <!-- DP and Jumbotron -->
         <div class="container after_navbar">
-            <div class="row">
-                <div  class="col-md-6 col-sm-12">
-                    <img src="./scripts/Varun_DP.JPG" id="dp">
+            <div class="row align-items-center">
+
+                <!-- My DP -->
+                <div class="col-xl-4 col-lg-5 col-md-5 col-sm-4 text-center">
+                    <img src="./scripts/v3.png" id="dp" class="img-fluid" width="500px">
                 </div>
                 
                 <!-- Jumbotron -->
-                <div class="col-md-6 col-sm-12 text-white">
-                    <div class="container">
-                        <h1 class="display-3">My name is Varun<br>IT Engineering Student</h1>
-                        <p class="h5">Intern at Bobble.ai</p>
+                <div class="col-xl-8 col-lg-7 col-md-7 col-sm-8">
+                    <div class="jumbotron">
+                        <h1 class="display-3 text-white">My name is Varun<br>CSE Student</h1>
+                        <lead class="h5">SDE Intern at Bobble.ai</lead>
                     </div>
                 </div>
             </div>
@@ -59,33 +76,217 @@
             <br>
             <br>
             <br>
+        </div>
 
-            <div class="container">
-                <div class="row">
-                    <div  class="col-lg-5 col-md-3 col-sm-3">
-                        <p class="h5">Design For</p><span>Web and Mobile</span>
+        <div id="contact-me">
+            <br>
+        </div>
+
+        <!-- My contact Details -->
+        <div class="container" >
+            <div class="row text-white">
+                <div  class="col-lg-5 col-md-3 col-sm-0">
+                </div>
+                <div  class="col-lg-7 col-md-9 col-sm-12 d-flex justify-content-between flex-wrap ">
+                    <div class="text-right h5 ph-email">
+                        <p>Phone</p><span>9535-283133</span>
                     </div>
-                    <div  class="col-lg-7 col-md-9 col-sm-9">   
-                        <p class="h5">Phone</p><span>9535283133</span>
-                        <p class="h5">Drop your message</p><span>varunv153@gmail.com</span>
+                    <div class="text-right h5 ph-email">
+                        <p>Drop your message</p><span><u>varunv153@gmail.com</u></span>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Margin after contact details -->
         <div>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
-            <p>Lorem ipsum to test sticky scroll</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
+
+    <!-- margin before expertise -->
+    <div id="expertise">
+        <br>
+        <br>
+        <br>
+    </div>
+    
+
+    <!--expertise -->
+    <div class="container expertise">
+        <h1>My Expertise</h1>
+        <br><br>
+        <div class="row no-gutters">
+            <!--card 1 -->
+            <div class="card col-lg-6 col-sm-12">
+                <div class="container card-container">
+                    <img class="card-img-top m-3" src="./scripts/Expertise_Pics/services1.svg" alt="Card image cap" style="width: 75px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Data Structures and Algorithms</h5>
+                        <p class="card-text">Have an active competitive coding profile on Codechef, Codeforces and Hackerrank for the past 3 years.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--card 2 -->
+            <div class="card col-lg-6 col-sm-12">
+                <div class="container card-container">
+                    <img class="card-img-top m-3" src="./scripts/Expertise_Pics/services2.svg" alt="Card image cap" style="width: 75px;">
+                    <div class="card-body">
+                        <h4 class="card-title">C++</h5>
+                        <p class="card-text">Have experience coding in C++ focussed on Data Structures and Algorithms for the past 3 years.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--card 3 -->
+            <div class="card col-lg-6 col-sm-12">
+                <div class="container card-container">
+                    <img class="card-img-top m-3" src="./scripts/Expertise_Pics/services3.svg" alt="Card image cap" style="width: 75px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Communication</h5>
+                        <p class="card-text">I have been a reporter at IIIT Gwalior's journalism club Uthaan and voluntary teacher at SGM, an NGO focussed on providing better quality education to students from below poverty families.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--card 4 -->
+            <div class="card col-lg-6 col-sm-12">
+                <div class="container card-container">
+                    <img class="card-img-top m-3" src="./scripts/Expertise_Pics/services4.svg" alt="Card image cap" style="width: 100px;">
+                    <div class="card-body">
+                        <h4 class="card-title">Teamwork</h5>
+                        <p class="card-text">Have experience working in as well as leading teams while co-ordinating tasks and keeping up the team spirit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--margin before experience -->
+    <div id="experience">
+        <br>
+    </div>
+
+    <!--experience-->
+    <div class="container experience">
+        <h1>Experience</h1>
+        <br>
+        <h5 style="color: #ff8553;">Workshop Trainer at Codechef - 2017 Jun-July</h5>
+
+        <p>Job was mainly focussed on introducing Programming as a fun concept to Pre-University Students where focus was put more on algorithmic thinking than code learning with Python. Work also included creating Session Plans and Content to be taught with a proper timeline distributed across 10 days with 6 hours each.</p>
+    </div>
+
+    <div class="container-fluid about-info">
+        <div class="container about-me" id="about-me">
+            <br><br>
+            <div class="row">
+
+                <!-- About Me -->
+                <div class="col-xl-6 col-lg-6 col-md-10">
+                    <h1>About Me</h1>
+                    <div class="container my-3 p-0">
+                        <p>Experienced Member with a demonstrated history of working with the team of CodeChef. Skilled in Competitive Programming, C++ and Python with a Bachelor of Technology focused in Information Technology from IIIT-Gwalior.</p>
+                    </div>
+                </div>
+
+                <!-- Progress -->
+                <div class="col-lg-6">
+
+                    <!--Progress Bar 1 -->
+                    <div class="container indi-bar">
+                        <div class="row justify-content-between">
+                            <div><span>Competitve Coding</span></div>
+                            <div style="color:#ff8553"><span>80%</span></div>
+                        </div>
+                        <div class="row progress ">
+                            <div class="progress-bar" role="progressbar" id="progressbar1">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container indi-bar">
+                        <div class="row justify-content-between">
+                            <div><span>C++</span></div>
+                            <div style="color:#ff8553"><span>75%</span></div>
+                        </div>
+                        <div class="row progress ">
+                            <div class="progress-bar" role="progressbar" id="progressbar2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container indi-bar">
+                        <div class="row justify-content-between">
+                            <div><span>Python</span></div>
+                            <div style="color:#ff8553"><span>70%</span></div>
+                        </div>
+                        <div class="row progress ">
+                            <div class="progress-bar" role="progressbar" id="progressbar3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Some margin after progress -->
+            <br>
+            <br>
+            <br>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="wrapper footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-lg-6 col-md-10 container my-3  fa-2x my-3" id="icon-container">
+                    <a href="https://www.facebook.com/varunv153">
+                        <i class="fab fa-facebook icon-margin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/varunve153">
+                        <i class="fab fa-instagram icon-margin"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/varunv153/">
+                        <i class="fab fa-linkedin icon-margin"></i>
+                    </a>
+                    <a href="https://github.com/varunv153">
+                        <i class="fab fa-github-square icon-margin"></i>
+                    </a>
+                    <a href="https://www.hackerrank.com/varunv153">
+                        <i class="fab fa-hackerrank icon-margin"></i>
+                    </a>
+                </div>
+                <div class="col-xl-5 col-lg-6 col-md-10 text-right">
+                    <a href="https://drive.google.com/file/d/1gIbe2a2YdGcFW7kXSnqy_MCw_NYHAYjp/view?usp=sharing" class="btn btn-primary btn-lg last-buttons" id="view-cv">View CV</a>
+                    <a href="#contact-me" class="btn btn-lg last-buttons" id="talk">Let's Talk</a>
+                    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+          } else {
+            mybutton.style.display = "none";
+          }
+        }
+        function topFunction() {
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
 </body>
 </html>
