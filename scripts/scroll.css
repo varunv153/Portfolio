@@ -1,27 +1,18 @@
-.slicknav_btn {
-    margin: 5px 5px 6px;
-    text-decoration: none;
-    text-shadow: 0 1px 1px rgb(255 255 255 / 75%);
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    background-color: #222;
+#contact-details
+{
+  padding-bottom: 65px;
 }
 
-.about-info .about-info-single p {
-    color: #fff;
-    font-size: 20px;
-    font-family: "Roboto Condensed",sans-serif;
-    font-weight: 400;
-}
-
+/*shadow for card*/
 .card {
   transition: 0.3s;
 }
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
+/*shadow for card done*/
 
+/*to get underline for nav item*/
 .nav-item
 {
   position: relative;
@@ -44,6 +35,7 @@
   transform-origin: 0% 100%;
   transition : transform 1s ease;
 }
+/*to get underline for nav item done*/
 
 
 #navbar-with-jumbotron
@@ -56,21 +48,24 @@
 {
   background:transparent ;
 }
-#navbar{
+.navbar
+{
   z-index: 500;
   background-color: #ff8553;
 }
 .ph-email
 {
-  margin-top: 100px;
+  
+  margin-top: 40px;
 }
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+/*static features of progress bar */
 .progress-bar
 {
   height: 0.25rem;
@@ -79,18 +74,23 @@
   animation-delay: 0.5s;
   animation-name: slideInLeft;
 }
+/*static features of progress bar done*/
+
+/*padding between card and its content */
 .card-container
 {
   padding: 30px;
 }
+/*padding between card and its content done*/
 
-.experience
+.parts
 {
-  margin-top: 70px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
-.about-me
+.first-part
 {
-  margin-top: 140px;
+  padding-top: 70px;
 }
 .indi-bar
 {
@@ -99,7 +99,6 @@
 .footer
 {
   background-color: black;
-  margin-top: 30px;
   padding-bottom: 50px;
 }
 #icon-container
@@ -107,12 +106,12 @@
   padding-top: 40px;
   transition: transform .7s ease-in-out;
 }
-.icon-margin
+.indi-icon
 {
   margin: 10px;
   color: #ff8553;
 }
-.icon-margin:hover {
+.indi-icon:hover {
   transition: 0.9s;
   transform: rotateY(180deg);
 }
@@ -122,18 +121,26 @@
   margin-right: 50px;
 }
 
-.about-info::before {
-    z-index: -1;
-    position: absolute;
-    content: "";
-    width: 74%;
-    height: 100%;
-    background: #f8f8f8;
-    border-radius: 0 90px 90px 0;
-    top: 0;
-    left: 0;
-    bottom: 0;
+/*about-info*/
+#about-info
+{
+  margin-bottom: 40px;
 }
+#about-info::before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  width: 74%;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 0 90px 90px 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+/*about-info*/
+
 #view-cv
 {
   background-color: black;
@@ -151,23 +158,8 @@
   color: white;
   border-radius: 1.5rem;
 }
-/*
-#para-about-me
-{
-  mar
-}
 
-
-.wrapper
-{
-  margin-top: 550px;
-}
-#dp
-{
-  padding-top: 100px;
-  border-radius: 50%;
-}
-*/
+/*move to top button */
 
 #myBtn {
   height: 50px;
@@ -189,4 +181,19 @@
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/*move to top button done*/
+
+#mainNav
+{
+  margin: auto;
+}
+
+@media(max-width: 576px)
+{
+    .ph-email
+    {
+      font-size: 4vw;
+    }
 }
